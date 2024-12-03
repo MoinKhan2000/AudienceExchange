@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.animate-gradient-motion {
+  background: linear-gradient(
+    -45deg,
+    #ff0080,
+    #61dafb,
+    #6600ff
+  );
+  background-size: 200% 100%;
+  animation: gradient-motion 6s ease infinite;
+}
+
+@keyframes gradient-motion {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-motion {
+  animation: gradient-motion 8s ease infinite;
+}
